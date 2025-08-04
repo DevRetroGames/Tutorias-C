@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  devretrogames_030825173845_tutorias_c_devcontainer:
+    container_name: devretrogames_030825173845_tutorias_c_devcontainer
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ..:/Tutorias_C:cached
+    command: sleep infinity
+    networks:
+      net_interna:
+        aliases:
+          - Tutorias_C_devcontainer
+
+networks:
+  net_interna:
+    name: Tutorias_C
+    driver: bridge
+    ipam:
+      driver: default

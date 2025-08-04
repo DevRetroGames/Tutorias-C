@@ -1,0 +1,16 @@
+{
+  "name": "DevRetroGames_030825173845_Tutorias_C",
+  "dockerComposeFile": [
+    "docker-compose.yml"
+  ],
+  "service": "devretrogames_030825173845_tutorias_c_devcontainer",
+  "workspaceFolder": "/Tutorias_C",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "danielpinto8zz6.c-cpp-compile-run"
+      ]
+    }
+  }
+}
